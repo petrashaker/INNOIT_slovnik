@@ -19,7 +19,7 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-.card-flex {
+.card--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +112,7 @@ html {
   .category {
     position: absolute;
     right: 10rem;
-    top: 9.5rem;
+    top: 12rem;
   }
 }
 
@@ -135,7 +135,6 @@ html {
 
 .category__list {
   margin: 3rem auto;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,8 +142,17 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: 50%;
-  margin-left: -10rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .category__list {
+    margin-right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .category__list--btn {
@@ -156,6 +164,18 @@ html {
   color: #393b3b;
   border: 0.1px solid #ffffff;
   margin-bottom: 0.5rem;
+  position: relative;
+  left: 50%;
+  margin-left: -10rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .category__list--btn {
+    margin-right: 0;
+    gap: 0;
+    left: 0%;
+    margin-left: 0;
+  }
 }
 
 .header {
@@ -209,7 +229,15 @@ html {
   }
 }
 
-.section__search {
+.paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +251,7 @@ html {
 }
 
 @media screen and (min-width: 550px) {
-  .section__search {
+  .search {
     max-width: 102rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -239,7 +267,7 @@ html {
   }
 }
 
-.section__search--input {
+.search__input {
   font-size: 1.5rem;
   line-height: 1.9rem;
   color: #393b3b;
@@ -248,7 +276,7 @@ html {
   border-bottom: 0.1rem solid #393b3b;
   padding-bottom: 0.5rem;
   font-weight: 400;
-  width: 550px;
+  width: 32rem;
   margin: 5rem auto 1rem auto;
   position: relative;
   -ms-flex-negative: 1;
@@ -256,24 +284,24 @@ html {
 }
 
 @media screen and (min-width: 550px) {
-  .section__search--input {
+  .search__input {
     width: 83rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .section__search--input {
+  .search__input {
     margin-left: 0;
   }
 }
 
-.section__search--btn {
+.search__btn {
   width: 14rem;
   height: 4rem;
   border-radius: 0.5rem;
   background-color: #393b3b;
   border: 0.1rem solid #393b3b;
-  margin: 0 auto 3rem 2rem;
+  margin: 0 auto 3rem auto;
   font-weight: 600;
   color: #ffffff;
   font-size: 1.7rem;
@@ -282,6 +310,12 @@ html {
           box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media screen and (min-width: 550px) {
+  .search__btn {
+    margin: 0 auto 3rem 2rem;
+  }
 }
 
 .section {
@@ -351,24 +385,24 @@ html {
   }
 }
 
-.section__show {
+.show {
   width: 32rem;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1025px) {
-  .section__show {
+@media screen and (min-width: 550px) {
+  .show {
     width: auto;
     margin-bottom: 3rem;
   }
 }
 
-.section__show--checkbox {
+.show__checkbox {
   position: absolute;
   left: -99999px;
 }
 
-.section__show--label {
+.show__label {
   cursor: pointer;
   background-color: #ffffff;
   color: #59c0ee;
@@ -384,12 +418,12 @@ html {
 }
 
 @media screen and (min-width: 550px) {
-  .section__show--label {
+  .show__label {
     display: none;
   }
 }
 
-.section__show--btn {
+.show__btn {
   background-color: #ffffff;
   color: #59c0ee;
   border-radius: 0.5rem;
@@ -405,23 +439,23 @@ html {
 }
 
 @media screen and (min-width: 550px) {
-  .section__show--btn {
+  .show__btn {
     display: inline-block;
     cursor: pointer;
   }
 }
 
-.section__show--list {
+.show__list {
   display: none;
 }
 
 @media screen and (min-width: 550px) {
-  .section__show--list {
+  .show__list {
     display: inline-block;
   }
 }
 
-.section__show--item {
+.show__list--item {
   display: block;
   background-color: #ffffff;
   color: #59c0ee;
@@ -439,14 +473,14 @@ html {
 }
 
 @media screen and (min-width: 550px) {
-  .section__show--item {
+  .show__list--item {
     display: inline-block;
     margin: 1rem 0.35rem;
   }
 }
 
 @media screen and (max-width: 569px) {
-  .section__show--checkbox:checked ~ .section__show--list {
+  .show--checkbox:checked ~ .show--list {
     display: block;
   }
 }

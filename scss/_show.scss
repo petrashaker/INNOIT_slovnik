@@ -1,19 +1,19 @@
-.section__show {
+.show {
     width: $width-xs;
     margin: 0 auto;
 
 
-    @media screen and (min-width: $screen-l) {
+    @media screen and (min-width: $screen-s) {
         width: auto;
         margin-bottom: 3rem;
     }
 
-    &--checkbox {
+    &__checkbox {
         position: absolute;
         left: -99999px;
     }
 
-    &--label {
+    &__label {
         cursor: pointer;
         @include btn_show-all;
         padding: 0.5rem 1rem;
@@ -24,7 +24,7 @@
         }
     }
 
-    &--btn {
+    &__btn {
         @include btn_show-all;
         @include btn_display;
         display: none;
@@ -36,32 +36,32 @@
 
     }
 
-    &--list {
+    &__list {
         display: none;
 
         @media screen and (min-width: $screen-s) {
             display: inline-block;
         }
-    }
-
-    &--item {
-        display: block;
-        @include btn_show-all;
-        margin: 0.5rem;
-        width: 2.7rem;
-        height: 4rem;
-        cursor: pointer;
-
-        @media screen and (min-width: $screen-s) {
-            display: inline-block;
-            margin: 1rem 0.35rem;
+        
+        &--item {
+            display: block;
+            @include btn_show-all;
+            margin: 0.5rem;
+            width: 2.7rem;
+            height: 4rem;
+            cursor: pointer;
+    
+            @media screen and (min-width: $screen-s) {
+                display: inline-block;
+                margin: 1rem 0.35rem;
+            }
         }
-    }
 
+    }
 }
 
 @media screen and (max-width: 569px) {
-    .section__show--checkbox:checked ~ .section__show--list {
+    .show--checkbox:checked ~ .show--list {
         display: block;
     }
 }
