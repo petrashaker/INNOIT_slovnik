@@ -1,0 +1,45 @@
+.category {
+    margin: 5rem auto;
+
+    @media screen and (min-width: 102rem) {
+        position: absolute;
+        right: 300px;
+        top: 320px;
+    }
+
+    &__header {
+        font-size: 2.6rem;
+        letter-spacing: 0.1rem;
+        line-height: 0.6rem;
+        color: $color-f-secondary;
+        font-weight: 300;
+        text-align: center;
+
+        @media screen and (min-width: 102rem) {
+            font-size: 3.6rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.6rem;
+        }
+    }
+
+    &__list {
+        margin: 3rem auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        margin-left: -10rem;
+
+        &--btn {
+            cursor: pointer;
+            width: 20rem;
+            height: 4rem;
+            border-radius: 0.5rem;
+            background-color: $color-bg-secondary;
+            color: $color-f-tertiary;
+            border: 0.1px solid $color-bg-secondary;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}

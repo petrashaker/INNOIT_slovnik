@@ -2,6 +2,10 @@
     width: $width-xs;
     margin: 0 auto;
 
+    @media screen and (min-width: 102rem) {
+        width: auto;
+    }
+
     &--checkbox {
         position: absolute;
         left: -99999px;
@@ -24,7 +28,7 @@
         display: none;
 
         @media screen and (min-width: 570px) {
-            display: block;
+            display: inline-block;
             cursor: pointer;
         }
 
@@ -32,6 +36,10 @@
 
     &--list {
         display: none;
+
+        @media screen and (min-width: 102rem) {
+            display: inline-block;
+        }
     }
 
     &--item {
@@ -40,6 +48,11 @@
         margin: 0.5rem;
         width: 2.7rem;
         height: 4rem;
+
+        @media screen and (min-width: 102rem) {
+            display: inline-block;
+            margin: 1rem 0.35rem;
+        }
     }
 
 }

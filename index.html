@@ -11,7 +11,9 @@
     <title>INNOIT SLOVNIK</title>
 </head>
 <body class="body">
-    <div class="section">
+    <span>&#8942 SLOVNÍK</span> <span>INNOIT</span>
+    <section class="section">
+        
         <h1 class="section__header">SLOVNÍK</h1>
         <h2 class="section__subheader">Porozumte řeči našeho IT kmene.</h2>
         
@@ -19,14 +21,15 @@
             <input type="text" class="section__search--input" placeholder="Jaký pojem vyhledáme?">
             <button class="section__search--btn">HLEDAT ></button>
         </form>
+
         <div class="section__show">
-            <button class="section__show--btn">zobrazit vše</button>
             <input type="checkbox" class="section__show--checkbox" id="checkbox">
             <button class="section__show--item u-visible">A</button>
             <button class="section__show--item u-visible">B</button>
             <label for="checkbox" class="section__show--label">            
                 zobrazit vše &#8595
             </label>
+            <button class="section__show--btn">zobrazit vše</button>
             <ul class="section__show--list">
                 <button class="section__show--item">A</button>
                 <button class="section__show--item">B</button>
@@ -54,6 +57,17 @@
                 <button class="section__show--item u-wider-btn">0-9</button>
             </ul>  
         </div>
+
+        <div class="category">
+            <h3 class="category__header">KATEGORIE</h3>
+            <ul class="category__list">
+                <button class="category__list--btn">1. kategorie</button>
+                <button class="category__list--btn">2. kategorie</button>
+                <button class="category__list--btn">3. kategorie</button>
+                <button class="category__list--btn">4. kategorie</button>
+            </ul>
+        </div>
+
         <div class="card-flex">
             <div class="card">
                 <h4 class="card_header">Facebook business manager</h4>
@@ -102,15 +116,7 @@
             </div>
         </div>
 
-        <div>
-            <h3>KATEGORIE</h3>
-            <ul>
-                <button>1. kategorie</button>
-                <button>2. kategorie</button>
-                <button>3. kategorie</button>
-                <button>4. kategorie</button>
-            </ul>
-        </div>
+
 
     
         <div class="paginator">
@@ -119,6 +125,6 @@
             <p>3</p>
             <p>...</p>
         </div>
-    </div>
+    </section>
 </body>
 </html>
