@@ -1,0 +1,51 @@
+.section__show {
+    width: $width-xs;
+    margin: 0 auto;
+
+    &--checkbox {
+        position: absolute;
+        left: -99999px;
+    }
+
+    &--label {
+        cursor: pointer;
+        @include btn_show-all;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+
+        @media screen and (min-width: 570px) {
+            display: none;
+        }
+    }
+
+    &--btn {
+        @include btn_show-all;
+        @include btn_display;
+        display: none;
+
+        @media screen and (min-width: 570px) {
+            display: block;
+            cursor: pointer;
+        }
+
+    }
+
+    &--list {
+        display: none;
+    }
+
+    &--item {
+        display: block;
+        @include btn_show-all;
+        margin: 0.5rem;
+        width: 2.7rem;
+        height: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 569px) {
+    .section__show--checkbox:checked ~ .section__show--list {
+        display: block;
+    }
+}

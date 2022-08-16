@@ -1,0 +1,39 @@
+.section__search {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @media screen and (min-width: 55rem) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &--input {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        color: $color-f-tertiary;
+        background-color: $color-bg-primary;
+        border: 0;
+        border-bottom: 0.1rem solid $color-bg-tertiary;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+        width: $width-xs;
+        margin: 5rem auto 1rem auto;
+    }
+
+    &--btn {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 0.5rem;
+        background-color: $color-bg-tertiary;
+        border: 0.1rem solid $color-bg-tertiary;
+        position: relative;
+        left: calc(100% - 16rem);
+        font-weight: 600;
+        color: $color-bg-secondary;
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+        box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+
+    }
+}
+

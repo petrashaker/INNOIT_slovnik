@@ -1,0 +1,40 @@
+.section {
+    @media screen and (min-width: 102rem) {
+        margin: 24rem 30rem 38rem 34rem;
+    }
+
+    &__header {
+        color: $color-f-secondary;
+        font-weight: 300;
+        font-size: 6.5rem;
+        letter-spacing: 0.1rem;
+        line-height: 3.2rem;
+        padding: 5rem 0;
+        display: block;
+        width: $width-xs;
+        margin: 0 auto;
+        
+        @media screen and (min-width: 102rem) {
+            font-size: 9.5rem;
+            letter-spacing: 0.2rem;
+            line-height: 4.2rem;
+        }
+    }
+
+    &__subheader {
+        color: $color-f-secondary;
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+        line-height: 3rem;
+        display: block;
+        width: $width-xs;
+        margin: 0 auto;
+    
+        @media screen and (min-width: 102rem) {
+            font-size: 3.8rem;
+            letter-spacing: 0.1rem;
+            line-height: 5.9rem;
+            font-weight: 700;
+        }
+    }
+}

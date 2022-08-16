@@ -1,0 +1,15 @@
+@mixin btn_show-all {
+    background-color: $color-bg-secondary;
+    color: $color-f-primary;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    border: 0.1rem solid $color-bg-secondary;
+    box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+@mixin btn_display {
+    width: 13rem;
+    height: 4rem;
+}
