@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    @media screen and (min-width: 55rem) {
+    @media screen and (min-width: $screen-s) {
         max-width: 102rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: 3rem;
     }
 
     &--input {
@@ -19,12 +20,16 @@
         border-bottom: 0.1rem solid $color-bg-tertiary;
         padding-bottom: 0.5rem;
         font-weight: 400;
-        width: $width-xs;
+        width: 320px;
         margin: 5rem auto 1rem auto;
         position: relative;
+        flex-shrink: 1;
 
-        @media screen and (min-width: 102rem) {
+        @media screen and (min-width: $screen-s) {
             width: 83rem;
+        }    
+
+        @media screen and (min-width: $screen-l) {
             margin-left: 0;
         }    
     }
@@ -35,14 +40,17 @@
         border-radius: 0.5rem;
         background-color: $color-bg-tertiary;
         border: 0.1rem solid $color-bg-tertiary;
-        position: relative;
-        // left: calc(100% - 16rem);
+        margin: 0 auto 3rem auto;
         font-weight: 600;
         color: $color-bg-secondary;
         font-size: 1.7rem;
         line-height: 2.8rem;
         box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
 
+        @media screen and (min-width: $screen-s) {
+            margin: 0 auto 3rem 2rem;
+        }    
     }
 }
 

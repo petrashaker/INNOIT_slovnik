@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 2rem;
+
+    @media screen and (min-width: $screen-l) {
+        display: block;
+    }
+
+    &__logo {
+        width: 10rem;
+        
+        @media screen and (min-width: $screen-l) {
+            width: 16.5rem;
+            position: relative;
+            margin-left: 50%;
+            left: -267.5px; //polovina šířky loga plus celé menu včetně marginu
+            margin-top: 2rem;
+        }
+
+    } 
+    
+    &__menu {
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+        line-height: 0.8rem;
+        margin-top: 1rem;
+        color: $color-f-tertiary;
+        display: inline;
+    
+        @media screen and (min-width: $screen-l) {
+            font-size: 3.2rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.8rem;
+            font-weight: 300;
+            text-align: center;
+            margin-left: 2rem;
+        }
+
+    }
+}
+

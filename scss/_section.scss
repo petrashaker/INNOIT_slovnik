@@ -1,6 +1,10 @@
 .section {
-    @media screen and (min-width: 102rem) {
-        margin: 24rem 30rem 38rem 34rem;
+    position: relative;
+    margin: 5rem 0;
+    @media screen and (min-width: $screen-s) {
+        // margin: 24rem 30rem 38rem 34rem;
+        margin: 10rem 0;
+        padding: 0 5rem;
     }
 
     &__header {
@@ -11,14 +15,19 @@
         line-height: 3.2rem;
         padding: 5rem 0;
         display: block;
-        width: $width-xs;
+        width: 32rem;
         margin: 0 auto;
         
-        @media screen and (min-width: 102rem) {
-            font-size: 9.5rem;
+        @media screen and (min-width: $screen-s) {
+            font-size: 8.0rem;
             letter-spacing: 0.2rem;
-            line-height: 4.2rem;
+            line-height: 3.8rem;
             width: auto;
+        }
+
+        @media screen and (min-width: $screen-l) {
+            font-size: 9.5rem;
+            line-height: 4.2rem;
         }
     }
 
@@ -31,12 +40,17 @@
         width: $width-xs;
         margin: 0 auto;
     
-        @media screen and (min-width: 102rem) {
-            font-size: 3.8rem;
+        @media screen and (min-width: $screen-s) {
+            font-size: 3.0rem;
             letter-spacing: 0.1rem;
-            line-height: 5.9rem;
+            line-height: 4.5rem;
             font-weight: 700;
             width: auto;
+        }
+
+        @media screen and (min-width: $screen-l) {
+            font-size: 3.8rem;
+            line-height: 5.9rem;
         }
     }
 }

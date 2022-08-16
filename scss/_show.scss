@@ -2,8 +2,10 @@
     width: $width-xs;
     margin: 0 auto;
 
-    @media screen and (min-width: 102rem) {
+
+    @media screen and (min-width: $screen-l) {
         width: auto;
+        margin-bottom: 3rem;
     }
 
     &--checkbox {
@@ -17,7 +19,7 @@
         padding: 0.5rem 1rem;
         margin-bottom: 0.5rem;
 
-        @media screen and (min-width: 570px) {
+        @media screen and (min-width: $screen-s) {
             display: none;
         }
     }
@@ -27,7 +29,7 @@
         @include btn_display;
         display: none;
 
-        @media screen and (min-width: 570px) {
+        @media screen and (min-width: $screen-s) {
             display: inline-block;
             cursor: pointer;
         }
@@ -37,7 +39,7 @@
     &--list {
         display: none;
 
-        @media screen and (min-width: 102rem) {
+        @media screen and (min-width: $screen-s) {
             display: inline-block;
         }
     }
@@ -48,8 +50,9 @@
         margin: 0.5rem;
         width: 2.7rem;
         height: 4rem;
+        cursor: pointer;
 
-        @media screen and (min-width: 102rem) {
+        @media screen and (min-width: $screen-s) {
             display: inline-block;
             margin: 1rem 0.35rem;
         }

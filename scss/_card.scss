@@ -13,49 +13,65 @@
     height: 30rem;
     padding: 3rem 3.5rem;
     margin: 0 auto;
-}
 
-.card_header {
-    color: $color-f-tertiary;
-    font-size: 2.1rem;
-    font-weight: 800;
-    line-height: 2.8rem;
-}
-
-.card_subheader {
-    color: $color-f-primary;
-    font-size: 1.7rem;
-    line-height: 2.8rem;
-    font-weight: 600;
-    position: relative;
-    margin: 3rem auto;
-
-    &::before {
-        content: "";
-        display: block;
-        width: 28.2rem;
-        height: 0.1rem;
-        background-color: #e6e6e6;
-        left: -1.8rem;
-        top: -1rem;
-        position: absolute;
+    &__header {
+        color: $color-f-tertiary;
+        font-size: 2.1rem;
+        font-weight: 800;
+        line-height: 2.8rem;
+    }
+    
+    &__subheader {
+        color: $color-f-primary;
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+        font-weight: 600;
+        position: relative;
+        margin: 3rem auto;
+    
+        &::before {
+            content: "";
+            display: block;
+            width: 28.2rem;
+            height: 0.1rem;
+            background-color: #e6e6e6;
+            left: -1.8rem;
+            top: -1rem;
+            position: absolute;
+        }
+    
+        &::after {
+            content: "";
+            display: block;
+            width: 28.2rem;
+            height: 0.1rem;
+            background-color: #e6e6e6;
+            left: -1.8rem;
+            bottom: -1rem;
+            position: absolute;
+        }
+    }
+    
+    &__info {
+        color: $color-f-tertiary;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        font-weight: 400;
     }
 
-    &::after {
-        content: "";
-        display: block;
-        width: 28.2rem;
-        height: 0.1rem;
-        background-color: #e6e6e6;
-        left: -1.8rem;
-        bottom: -1rem;
-        position: absolute;
+    &__more {
+        display: inline-block;
+        border: 0.1rem solid $color-f-tertiary;
+        background-color: $color-bg-tertiary;
+        color: $color-f-secondary;
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+        left: 96%;
+        bottom: 1.4rem;
+        border-bottom-right-radius: 0.5rem;
+        cursor: pointer;
     }
-}
-
-.card_info {
-    color: $color-f-tertiary;
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-    font-weight: 400;
 }
