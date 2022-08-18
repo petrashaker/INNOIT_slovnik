@@ -53,6 +53,16 @@
         line-height: 2.8rem;
         box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
         flex-shrink: 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-bg-secondary;
+            color: $color-f-tertiary;
+        }
+
+        &:active {
+            transform: translateY(0.2rem);
+        }
 
         @media screen and (min-width: $screen-s) {
             margin: 0 auto 3rem 2rem;

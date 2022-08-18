@@ -40,8 +40,8 @@
   line-height: 2.8rem;
   font-weight: 600;
   border: 0.1rem solid #ffffff;
-  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(255, 255, 255, 0.1);
+          box-shadow: 0.1rem 0.2rem 0.4rem rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
 }
@@ -66,8 +66,8 @@
   line-height: 2.8rem;
   font-weight: 600;
   border: 0.1rem solid #ffffff;
-  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(255, 255, 255, 0.1);
+          box-shadow: 0.1rem 0.2rem 0.4rem rgba(255, 255, 255, 0.1);
   width: 13rem;
   height: 4rem;
   display: none;
@@ -105,8 +105,8 @@
   line-height: 2.8rem;
   font-weight: 600;
   border: 0.1rem solid #ffffff;
-  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(255, 255, 255, 0.1);
+          box-shadow: 0.1rem 0.2rem 0.4rem rgba(255, 255, 255, 0.1);
   margin: 0.5rem;
   width: 2.7rem;
   height: 4rem;
@@ -253,6 +253,11 @@ html {
   cursor: pointer;
 }
 
+.card__more:hover {
+  background-color: #ffffff;
+  color: #393b3b;
+}
+
 .category {
   margin: 5rem auto;
 }
@@ -300,6 +305,18 @@ html {
   text-align: center;
 }
 
+@media screen and (min-width: 550px) {
+  .category__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1540px) {
   .category__list {
     margin-right: 0;
@@ -328,6 +345,13 @@ html {
   background-color: #59c0ee;
   border: 0.1rem solid #ffffff;
   color: #ffffff;
+}
+
+@media screen and (min-width: 550px) {
+  .category__list--btn {
+    position: static;
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (min-width: 1540px) {
@@ -512,6 +536,17 @@ html {
           box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  cursor: pointer;
+}
+
+.search__btn:hover {
+  background-color: #ffffff;
+  color: #393b3b;
+}
+
+.search__btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
 }
 
 @media screen and (min-width: 550px) {

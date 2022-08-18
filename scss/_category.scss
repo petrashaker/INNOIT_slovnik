@@ -32,9 +32,10 @@
         flex-direction: column;
         text-align: center;
 
-        // @media screen and (min-width: $screen-l) {
-        //     flex-direction: row;
-        // }
+        @media screen and (min-width: $screen-s) {
+            flex-direction: row;
+            justify-content: center;
+        }
 
         @media screen and (min-width: $screen-xl) {
             margin-right: 0;
@@ -59,11 +60,10 @@
                 @include hover_white-to-blue;
             }
 
-            // @media screen and (min-width: $screen-l) {
-            //     gap: 2rem;
-            //     left: 50%;
-            //     margin-left: -43rem;
-            // }
+            @media screen and (min-width: $screen-s) {
+                position: static;
+                margin-left: 1rem;
+            }
     
             @media screen and (min-width: $screen-xl) {
                 margin-right: 0;
