@@ -179,7 +179,7 @@ html {
 
 @media screen and (min-width: 1540px) {
   .card--flex {
-    margin: 15rem 20.4rem 0 auto;
+    margin: 15rem auto 0 auto;
   }
 }
 
@@ -564,13 +564,6 @@ html {
   .section {
     margin: 10rem auto;
     padding: 0 5rem;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .section {
-    max-width: 160rem;
-    margin: 10rem auto;
   }
 }
 
