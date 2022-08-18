@@ -601,12 +601,6 @@ html {
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .section__header {
-    width: 102rem;
-  }
-}
-
 .section__subheader {
   color: #ffffff;
   font-size: 2.4rem;

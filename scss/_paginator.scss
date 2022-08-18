@@ -9,7 +9,7 @@
 
     @media screen and (min-width: $screen-s) {
         display: flex;
-        max-width: 102rem;
+        max-width: $width-l;
         margin: 5rem auto;
         justify-content: center;
     }

@@ -4,7 +4,7 @@
     justify-content: flex-start;
 
     @media screen and (min-width: $screen-s) {
-        max-width: 102rem;
+        max-width: $width-l;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;

@@ -4,7 +4,7 @@
     flex: 1 0 auto;
     flex-shrink: 0;
     gap: 3rem;
-    max-width: 102rem;
+    max-width: $width-l;
 
     @media screen and (min-width: $screen-l) {
         margin: 5rem auto 0 auto;     

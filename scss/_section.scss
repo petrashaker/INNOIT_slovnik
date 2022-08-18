@@ -19,7 +19,7 @@
         line-height: 3.2rem;
         padding: 5rem 0;
         display: block;
-        width: 32rem;
+        width: $width-xs;
         margin: 0 auto;
         
         @media screen and (min-width: $screen-s) {
@@ -30,11 +30,7 @@
         }
 
         @media screen and (min-width: $screen-l) {
-            width: 102rem;
-        }
-
-        @media screen and (min-width: $screen-l) {
-            width: 102rem;
+            width: $width-l;
         }
     }
 
@@ -58,7 +54,7 @@
         @media screen and (min-width: $screen-l) {
             font-size: 3.8rem;
             line-height: 5.9rem;
-            width: 102rem;
+            width: $width-l;
         }
     }
 }
