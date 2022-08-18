@@ -1,3 +1,140 @@
+.alphabet {
+  width: 32rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 550px) {
+  .alphabet {
+    width: auto;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .alphabet {
+    position: absolute;
+    left: 50%;
+    margin-left: -51.5rem;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .alphabet {
+    position: absolute;
+    left: 50%;
+    margin-left: -51.5rem;
+  }
+}
+
+.alphabet__checkbox {
+  position: absolute;
+  left: -99999px;
+}
+
+.alphabet__label {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #59c0ee;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  border: 0.1rem solid #ffffff;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.alphabet__label:hover {
+  background-color: #59c0ee;
+  border: 0.1rem solid #ffffff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 550px) {
+  .alphabet__label {
+    display: none;
+  }
+}
+
+.alphabet__btn {
+  background-color: #ffffff;
+  color: #59c0ee;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  border: 0.1rem solid #ffffff;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  width: 13rem;
+  height: 4rem;
+  display: none;
+}
+
+.alphabet__btn:hover {
+  background-color: #59c0ee;
+  border: 0.1rem solid #ffffff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 550px) {
+  .alphabet__btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.alphabet__list {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .alphabet__list {
+    display: inline-block;
+  }
+}
+
+.alphabet__list--item {
+  display: block;
+  background-color: #ffffff;
+  color: #59c0ee;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  border: 0.1rem solid #ffffff;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+  width: 2.7rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.alphabet__list--item:hover {
+  background-color: #59c0ee;
+  border: 0.1rem solid #ffffff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 550px) {
+  .alphabet__list--item {
+    display: inline-block;
+    margin: 1rem 0.35rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .alphabet__checkbox:checked ~ .alphabet__list {
+    display: block;
+  }
+  .alphabet__checkbox:checked ~ .u-visible {
+    display: none;
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -479,7 +616,7 @@ html {
   height: 3.2rem;
 }
 
-@media screen and (min-width: 569px) {
+@media screen and (min-width: 550px) {
   .u-visible {
     display: none;
   }

@@ -13,3 +13,9 @@
     width: 13rem;
     height: 4rem;
 }
+
+@mixin hover_white-to-blue {
+    background-color: $color-bg-primary;
+    border: 0.1rem solid $color-bg-secondary;
+    color: $color-f-secondary;
+}

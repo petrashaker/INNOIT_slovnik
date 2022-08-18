@@ -31,6 +31,10 @@
         padding: 0.5rem 1rem;
         margin-bottom: 0.5rem;
 
+        &:hover {
+            @include hover_white-to-blue;
+        }
+
         @media screen and (min-width: $screen-s) {
             display: none;
         }
@@ -40,6 +44,10 @@
         @include btn_alphabet-all;
         @include btn_display;
         display: none;
+
+        &:hover {
+            @include hover_white-to-blue;
+        }
 
         @media screen and (min-width: $screen-s) {
             display: inline-block;
@@ -61,13 +69,11 @@
             width: 2.7rem;
             height: 4rem;
             cursor: pointer;
-
+        
             &:hover {
-                background-color: $color-bg-primary;
-                border: 0.1rem solid $color-bg-secondary;
-                color: $color-f-secondary;
+                @include hover_white-to-blue;
             }
-    
+        
             @media screen and (min-width: $screen-s) {
                 display: inline-block;
                 margin: 1rem 0.35rem;
@@ -77,14 +83,12 @@
     }
 }
 
-@media screen and (max-width: 569px) {
-    .alphabet--checkbox:checked ~ .alphabet--list {
+@media screen and (max-width: $screen-s) {
+    .alphabet__checkbox:checked ~ .alphabet__list {
         display: block;
     }
-}
 
-.alphabet__list--item:hover {
-    background-color: $color-bg-primary;
-    border: 0.1rem solid $color-bg-secondary;
-    color: $color-f-secondary;
+    .alphabet__checkbox:checked ~ .u-visible {
+        display: none;
+    }
 }
