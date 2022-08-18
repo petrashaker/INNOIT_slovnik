@@ -2,9 +2,18 @@
     position: relative;
     margin: 5rem 0;
     @media screen and (min-width: $screen-s) {
-        // margin: 24rem 30rem 38rem 34rem;
-        margin: 10rem 0;
+        margin: 10rem auto;
         padding: 0 5rem;
+    }
+
+    @media screen and (min-width: $screen-l) {
+        max-width: 160rem;
+        margin: 10rem auto;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+        max-width: 160rem;
+        margin: 10rem auto;
     }
 
     &__header {
@@ -26,8 +35,11 @@
         }
 
         @media screen and (min-width: $screen-l) {
-            font-size: 9.5rem;
-            line-height: 4.2rem;
+            width: 102rem;
+        }
+
+        @media screen and (min-width: $screen-l) {
+            width: 102rem;
         }
     }
 
@@ -51,6 +63,7 @@
         @media screen and (min-width: $screen-l) {
             font-size: 3.8rem;
             line-height: 5.9rem;
+            width: 102rem;
         }
     }
 }

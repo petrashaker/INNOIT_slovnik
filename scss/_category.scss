@@ -1,10 +1,14 @@
 .category {
     margin: 5rem auto;
 
+    @media screen and (min-width: $screen-l) {
+        margin-top: 15rem;
+    }
+
     @media screen and (min-width: $screen-xl) {
         position: absolute;
-        right: 10rem;
-        top: 12rem;
+        right: 1rem;
+        top: 1.6rem;
     }
 
     &__header {
@@ -50,6 +54,12 @@
             position: relative;
             left: 50%;
             margin-left: -10rem;
+
+            &:hover {
+                background-color: $color-bg-primary;
+                border: 0.1rem solid $color-bg-secondary;
+                color: $color-f-secondary;
+            }
 
             // @media screen and (min-width: $screen-l) {
             //     gap: 2rem;

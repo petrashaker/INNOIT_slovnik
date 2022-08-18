@@ -11,6 +11,12 @@
         margin-bottom: 3rem;
     }
 
+    @media screen and (min-width: $screen-l) {
+        position: relative;
+        left: 50%;
+        margin-left: -51rem;
+    }
+
     &__input {
         font-size: 1.5rem;
         line-height: 1.9rem;

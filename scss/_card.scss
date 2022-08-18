@@ -5,7 +5,16 @@
     flex-shrink: 0;
     gap: 3rem;
     max-width: 102rem;
+
+    @media screen and (min-width: $screen-l) {
+        margin: 5rem auto 0 auto;     
+    }
+
+    @media screen and (min-width: $screen-xl) {
+        margin: 15rem 20.4rem 0 auto;        
+    }
 }
+
 .card {
     background-color: $color-bg-secondary;
     border-radius: 0.5rem;

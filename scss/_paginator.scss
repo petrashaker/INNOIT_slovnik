@@ -1,5 +1,30 @@
 .paginator {
-    display: flex;
     margin: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 2.7rem;
+    color: $color-f-secondary;
+    line-height: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    display: none;
+
+    @media screen and (min-width: $screen-s) {
+        display: flex;
+        max-width: 102rem;
+        margin: 5rem auto;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $screen-l) {
+        justify-content: start; 
+        max-width: 90rem;
+    }
+}
+
+.paginator__page {
+    padding: 0 1rem;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-f-tertiary;
+    }
 }

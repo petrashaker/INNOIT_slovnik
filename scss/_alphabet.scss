@@ -1,4 +1,4 @@
-.show {
+.alphabet {
     width: $width-xs;
     margin: 0 auto;
 
@@ -8,6 +8,18 @@
         margin-bottom: 3rem;
     }
 
+    @media screen and (min-width: $screen-l) {
+        position: absolute;
+        left: 50%;
+        margin-left: -51.5rem;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+        position: absolute;
+        left: 50%;
+        margin-left: -51.5rem; //category width 20.4rem
+    }
+
     &__checkbox {
         position: absolute;
         left: -99999px;
@@ -15,7 +27,7 @@
 
     &__label {
         cursor: pointer;
-        @include btn_show-all;
+        @include btn_alphabet-all;
         padding: 0.5rem 1rem;
         margin-bottom: 0.5rem;
 
@@ -25,7 +37,7 @@
     }
 
     &__btn {
-        @include btn_show-all;
+        @include btn_alphabet-all;
         @include btn_display;
         display: none;
 
@@ -33,7 +45,6 @@
             display: inline-block;
             cursor: pointer;
         }
-
     }
 
     &__list {
@@ -45,11 +56,17 @@
         
         &--item {
             display: block;
-            @include btn_show-all;
+            @include btn_alphabet-all;
             margin: 0.5rem;
             width: 2.7rem;
             height: 4rem;
             cursor: pointer;
+
+            &:hover {
+                background-color: $color-bg-primary;
+                border: 0.1rem solid $color-bg-secondary;
+                color: $color-f-secondary;
+            }
     
             @media screen and (min-width: $screen-s) {
                 display: inline-block;
@@ -61,7 +78,13 @@
 }
 
 @media screen and (max-width: 569px) {
-    .show--checkbox:checked ~ .show--list {
+    .alphabet--checkbox:checked ~ .alphabet--list {
         display: block;
     }
+}
+
+.alphabet__list--item:hover {
+    background-color: $color-bg-primary;
+    border: 0.1rem solid $color-bg-secondary;
+    color: $color-f-secondary;
 }
